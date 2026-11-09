@@ -20,3 +20,33 @@ O **Client** terá como função:
  * Requisitar rotas.
  * Receber os alertas do **Server**.
  * Avaliar se novos incidentes afetam rotas já estabelecidas, oferecendo a opção de pedir para recalcular a rota.
+
+### Requisitos
+
+  Python 3.10 ou superior e acesso à internet. As dependências estão em "gps\backend\requirements.txt" e podem ser baixadas e instaladas utilizando o próprio Python.
+
+### Como Rodar
+
+ É recomendado a utilização de um ambiente virtual para o projeto!
+
+ Após baixar o projeto:
+
+  * Extraia o arquivo "GPS_Municipal_Aracatuba.zip".
+
+  * Abra o Prompt de Comando e acesse a pasta "gps".
+
+  * Instale as depencências dentro de "backend\requirements.txt"
+    * Utilize o comando "*.venv\Scripts\python.exe -m pip install -r backend\requirements.txt*" para instalar as dependências. É necessário conexão com a internet, e é recomendado a utilização de um ambiente virtual.
+
+
+  * Inicie o programa com "*.venv\Scripts\python.exe iniciar_local.py*"
+    * O programa por padrão tenta utilizar os seguintes endereços:
+        * GPS: http://127.0.0.1:8000
+        * Prefeitura: http://127.0.0.1:8001
+    * Caso uma porta esteja ocupada, o programa buscará outra porta! O endereço escolhido sempre será mostrado na tela do terminal.
+
+  * Mantenha o terminal aberto para manter o servidor ativo.
+
+  * Precione "*CTRL + C*" para encerrar o servidor. Os incidentes são guardados em memória e perdidos quando o servidor é encerrado.
+
+  * Execute "*.venv\Scripts\python.exe iniciar_local.py*" sempre que quiser iniciar novamente a aplicação.
