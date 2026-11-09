@@ -27,6 +27,12 @@ O **Client** terá como função:
 
 ### Como Rodar
 
+#### Método Automático
+  
+  Rode o arquivo "*gps\setup.bat*" como administrador
+  
+#### Método Manual
+
  É recomendado a utilização de um ambiente virtual para o projeto!
 
  Após baixar o projeto:
