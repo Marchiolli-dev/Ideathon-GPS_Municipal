@@ -1,0 +1,11 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>GPS Municipal de Araçatuba</title><link rel="stylesheet" href="/vendor/leaflet.css"><link rel="stylesheet" href="/style.css"></head><body>
+<header><div><small>MOBILIDADE MUNICIPAL</small><h1>GPS de Araçatuba</h1></div><button type="button" class="abrir-acessibilidade" aria-label="Prefeitura de Araçatuba — abrir acessibilidade" aria-haspopup="dialog" aria-expanded="false" aria-controls="acessibilidade"><img class="logo-prefeitura" src="/logo_aracatuba_topo.png" alt="Prefeitura de Araçatuba"></button><span id="live" class="sr-only" role="status">Conectando…</span></header>
+<main><div id="map" aria-label="Mapa de ruas de Araçatuba"></div><section><h2>Seu trajeto</h2><form><label>Origem<select id="origem" required></select></label><label>Destino<select id="destino" required></select></label><button id="go">Calcular rota</button></form><p role="status" id="status">Escolha os cruzamentos de partida e chegada.</p><aside hidden id="aviso" role="alert"><strong>Alteração na sua rota</strong><p id="motivo"></p><button id="recalcular">Recalcular rota</button> <button class="secondary" id="manter">Manter rota atual</button></aside></section></main>
+<script src="/vendor/leaflet.js"></script><script type="module" src="/app.js"></script><dialog id="acessibilidade" aria-labelledby="titulo-acessibilidade">
+<h2 id="titulo-acessibilidade">Acessibilidade</h2>
+<label for="tamanho-texto">Tamanho do texto</label>
+<select id="tamanho-texto"><option value="normal">Normal</option><option value="grande">Grande</option><option value="maior">Maior</option></select>
+<label class="opcao-contraste"><input type="checkbox" id="alto-contraste"> Alto contraste</label>
+<button type="button" id="restaurar-acessibilidade" class="secondary">Restaurar padrão</button>
+<form method="dialog"><button>Fechar</button></form>
+</dialog><script type="module" src="/acessibilidade.js"></script></body></html>
